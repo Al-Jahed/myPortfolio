@@ -1,18 +1,1 @@
-/* Modern minimalist style */
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-}
-.card {
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
-}
+
