@@ -1,1 +1,9 @@
+# app.py
+from flask import Flask, request, jsonify
+app = Flask(__name__)
 
+@app.route('/submit-form', methods=['POST'])
+def handle_form():
+    data = request.json
+    print(f"Received: {data}")  # Replace with email logic
+    return jsonify({"status": "success"})
