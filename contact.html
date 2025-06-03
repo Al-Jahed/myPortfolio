@@ -7,3 +7,11 @@ def handle_form():
     data = request.json
     print(f"Received: {data}")  # Replace with email logic
     return jsonify({"status": "success"})
+// scripts/main.js
+document.getElementById("contact-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  await fetch("/submit-form", {
+    method: "POST",
+    body: JSON.stringify({ name: e.target.name.value, email: e.target.email.value })
+  });
+});
